@@ -1,0 +1,68 @@
+#inputSection {
+    background-color: rgb(247, 243, 238);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 200px;
+    grid-auto-rows: 100px;
+    gap: 30px;
+    margin-bottom: 11px;
+    height: 270px;
+}
+
+
+input {
+    margin-top: 11px;
+    margin-bottom: 11px;
+    display: flex;
+    align-items: center;
+    border-color: rgb(111, 111, 211);
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+#formText {
+    margin-bottom: 200px;
+}
+#subTitle {
+    grid-row: 1/2;
+    grid-column: 1/6;
+}
+
+.form {
+    
+    grid-column:1 / 5;
+    margin: auto;
+    margin-top: 0;
+}
+
+#images {
+    grid-column: 5/6;
+    grid-row: 1/2;
+}
+#account {
+    padding-top: 35px;
+    grid-column: 2/3;
+}
+#submitButton {
+    width: 100px;
+    height: 25px;
+    grid-row-start: 2;
+    
+
+}
+
+.bonsai {
+    margin-bottom: 33px;
+}
+
+#check {
+    padding-top: 11px;
+}
+#name {
+    padding-top: 35px;
+}
+
+

@@ -1,0 +1,18 @@
+
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+
+.aboutUs {
+    grid-column:1 / 6;
+}
+
+aside {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+

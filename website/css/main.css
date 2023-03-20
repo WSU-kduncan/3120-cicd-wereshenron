@@ -1,0 +1,89 @@
+body {
+  width: 90%;
+  margin: auto;
+}
+
+
+#mainHeader {
+  background-color: darkolivegreen;
+  color: rgb(255, 255, 255);
+  vertical-align: middle;
+  font-family: 'Manrope', sans-serif;
+  font-size: 1.5em;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  height: 100px;
+  line-height: 100px;
+}
+
+.subTitle {
+  color: gray;
+  margin: auto;
+  text-align: center;
+}
+
+#selections {
+  background-color: gray;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: darkolivegreen;
+  object-fit: contain;
+  text-align: center;
+  vertical-align: middle;
+  font-family: 'Manrope';
+  font-weight: bold;
+  font-size: 1.25em;
+}
+
+.selection {
+  margin: 0;
+  padding: 0;
+  color: #fffff7;
+  text-decoration: none;
+}
+
+.bonsai {
+  width: 300px;
+  height: 250px;
+  object-fit: contain;
+  margin: auto;
+  text-align: center;
+}
+#title {
+  text-align: center;
+}
+.text{
+  color: darkgoldenrod;
+}
+
+footer {
+  height: 50px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  background-color: darkolivegreen;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 0.75em;
+  color: #fffff7;
+  padding-right: 15px;
+  border: 1px solid #000;
+  display: table;
+  width: 99%;
+}
+footer ul {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+footer ul a {
+  color: #fffff7;
+}
+
+aside {
+  margin-top: 11px;
+  margin-bottom: 11px;
+}

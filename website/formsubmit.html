@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/mainGrid.css">
+    <link rel="stylesheet" href="css/formSubmit.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300&display=swap" rel="stylesheet">
+
+    <script>
+         window.addEventListener("load", function(){   
+         // Retrieve the field/value pairs from the URL
+         var formData = location.search.slice(1);
+         formData = formData.replace(/\+/g," ");
+         formData = decodeURIComponent(formData);
+         let formFields = formData.split(/[&=]/g); 
+         console.log(formFields);
+
+         document.getElementById("firstnameShip").textContent = formFields[1];
+         document.getElementById("lastnameShip").textContent = formFields[3];
+         document.getElementById("address1Ship").textContent = formFields[5];
+         } );
+    </script>
+</head>
+
+<body>
+    <section>
+        <header id="mainHeader"><h1>Soul of Bonsai</h1></header>
+        <nav>
+            <p>
+                <ul id="selections">
+                    <strong><a class="selection" href="index.html">Home Page</a></strong>&nbsp; &nbsp;
+                    <strong><a class="selection"  href="tablePage.html">Size Classification</a></strong>&nbsp; &nbsp;
+                    <strong><a class="selection"  href="formPage.html">Questions</a></strong>&nbsp; &nbsp;
+                    <strong><a class="selection"  href="slideshow.html">Slideshow Of The Bonsai</a></strong>&nbsp; &nbsp;
+                </ul>
+            </p>
+        </nav>
+        <main>
+            <article id="complete">
+                <h1 class="subTitle">Please check your email to complete signup with following information: </h1>
+                
+
+
+
+            </article>
+            <table id="shipping">
+                <tr>
+                   <td>First Name</td>
+                   <td><span id="firstnameShip"></span></td>
+                </tr>
+                <tr>
+                   <td>Last Name</td>
+                   <td><span id="lastnameShip"></span></td>
+                </tr> 
+                <tr>
+                   <td>Email </td>
+                   <td><span id="address1Ship"></span></td>
+                </tr>
+                   
+             </table>
+
+        </main>
+
+        <aside>
+
+            <img src="images/bonsai.webp" class="bonsai">
+            <img src="images/bonsai2.jpeg" class="bonsai">
+            <img src="images/bonsai3.jpeg" class="bonsai">
+
+        </aside>
+        <footer>
+            <ul>
+                &copy;
+                <em>Soul of Bonsai</em> <br>
+                <em>Questions? Send us an email:
+                    <a href="mailto:notarealemail@gmail.com">support.soulofbonsai@gmail.com</a>
+                </em>
+            </ul>
+        </footer>
+    </section>
+
+</body>
+
+</html>

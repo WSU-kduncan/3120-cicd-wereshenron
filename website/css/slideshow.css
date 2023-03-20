@@ -1,0 +1,78 @@
+
+
+#slideTitle{
+    text-align: center;
+
+}
+
+ .slideImages {
+     height: 300px;
+ }
+ div#slides {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+ }
+ 
+ div#slidebox {
+    width: 800px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    
+ }
+ 
+ div#slidebox img#leftbutton, div#slidebox img#rightbutton {
+    position: absolute;
+    width: 60px;
+    cursor: pointer;
+    
+ }
+ 
+ div#slidebox img#leftbutton {
+    top: 100px;
+    left: 120px;  
+ }
+ 
+ div#slidebox img#rightbutton {
+    top: 100px;
+    left: 620px;  
+ }
+ 
+ div#slides > img {
+    width: 400px;
+    position: absolute;
+    top: 0px;
+ }
+ 
+ div#slides {
+    width: 400px;
+    height: 300px;
+    margin: 0 auto;
+    overflow:hidden;
+    position: relative;
+    border: 1px solid black;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.7);
+ }
+ 
+ div#slides > img#photo1 {left: 0px;}
+ div#slides > img#photo2 {left: 401px;}
+ div#slides > img#photo3 {left: 802px;}
+ div#slides > img#photo4 {left: 1203px;}
+ div#slides > img#photo5 {left: 1604px;}
+ div#slides > img#photo6 {left: 2005px;}
+ div#slides > img#photo7 {left: 2406px;}
+
+ 
+ div#caption {
+    width: 80%;
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.3em;
+    line-height: 1.5em;  
+ }

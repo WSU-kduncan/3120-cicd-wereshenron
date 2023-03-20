@@ -1,0 +1,25 @@
+table {
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    float: left;
+    grid-column: 2/5;
+    
+ }
+ 
+ table td {
+    border: 1px solid rgb(150,150,150);
+    padding: 5px;
+ }
+ 
+ table tr td:first-of-type {
+    background-color: darkolivegreen;
+    color: white;
+ }
+
+ #complete {
+     margin: auto;
+ }
+ #subTitle {
+    grid-column: 1/5;
+ }

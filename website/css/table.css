@@ -1,0 +1,36 @@
+main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+}
+
+
+.tableLayout {
+    grid-column:1 / 5;
+}
+ 
+table, th, td {
+    border: 1px solid #000;
+    height: 50px;
+}
+
+
+.myTable {
+    text-align: center;
+    border-collapse: collapse;
+    width: 800px;
+}
+
+tbody td:nth-of-type(1) {
+    background-color: gray;
+    color: whitesmoke;
+}
+tbody td:nth-of-type(4) {
+    background-color: gray;
+    color: whitesmoke;
+}
+thead tr:nth-of-type(1) {
+    color: white;
+    background-color: darkolivegreen;
+}
+
