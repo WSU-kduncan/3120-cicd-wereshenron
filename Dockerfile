@@ -1,3 +1,3 @@
-FROM nginx
+FROM ubuntu
 
-COPY . /usr/share/nginx/html
+COPY . /app
