@@ -11,7 +11,12 @@
 
 
 - Run Project Locally
-    - On my system (OSX), I decided to install Docker locally using the following website as a guide: https://hjerpbakk.com/blog/2022/02/01/replacing-docker-desktop
+    - On my system (OSX), I decided to install Docker locally using the following website as a guide: https://hjerpbakk.com/blog/2022/02/01/replacing-docker-desktop. Following the instructions on this guide, I installed Docker and Colima (a Mac container runtime). Now, to enable docker, I have to run the command `colima start`. 
 
-    - The 4th task "Create a container image that will run a webserver...", I ran the command `docker run -it --rm busybox .` 
+    - The 4th task "Create a container image that will run a webserver...": Within my local repository `website/` directory, I ran the command `docker run -it -v $(pwd):/usr/share/nginx/html -p 8080:80 nginx` 
+
+    - After the Dockerfile is build, it can be run using the command: `
+
+
+        
 
