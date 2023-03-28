@@ -1,3 +1,3 @@
-FROM nginx
+FROM ubuntu/apache2
 
-COPY website /usr/share/nginx/html
+COPY website /var/www/html
