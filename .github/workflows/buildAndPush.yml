@@ -25,4 +25,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: wereshenron/testImage:1.0
+        tags: wereshenron/testimage:1.0
