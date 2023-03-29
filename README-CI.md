@@ -40,5 +40,7 @@
         4. Commands to execute 
 
 
+![Screenshot](Images/CI.png)
+
         
 
