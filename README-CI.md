@@ -39,7 +39,7 @@
         3. The working directory and directories of files you wish to use
         4. Commands to execute 
 
-
+# Part 3 - Diagram Of the Whole Process
 ![Screenshot](Images/CI.png)
 
         
