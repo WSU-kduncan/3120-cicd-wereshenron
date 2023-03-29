@@ -15,7 +15,7 @@
 
     - The 4th task "Create a container image that will run a webserver...": Within my local repository `website/` directory, I ran the command `docker run -it -v $(pwd):/var/www/html -p 8080:80 ubuntu/apache2` 
 
-    - After the Dockerfile is built with `docker build -t test`, it can be run using the command `docker run --rm -p 8080:80 -it test`
+    - After the Dockerfile is built with `docker build -t test .`, it can be run using the command `docker run --rm -p 8080:80 -it test`
 
 # Part 2
 - Process to create public repo in DockerHub
