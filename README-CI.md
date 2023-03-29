@@ -27,6 +27,18 @@
 - How to push container image to Dockerhub (without GitHub Actions)
     - To push container images to Dockerhub manually in the CLI, you have to tag the image after logging in. After succesfully logging in from the last step, as well as creating an image from Part #1, you can run the command `docker tag <image ID> <myusername>/myimage:1.0`. In my case, I ran `docker tag test:latest wereshenron/testimage:1.0`. Then, you can push the image to docker using the command `docker push wereshenron/testimage:1.0`
 
+- Configuring GitHub Secrets 
+    - To set secrets in GitHub, I navigated to my repository page of GitHub. In the repository, I navigated to the Settings column. Then, I clicked on "Secrets and variables" on the left sidebar. After expanding this, I clicked on the "Actions" sublist item. Then, click on the "New repository secret" button. You can give the secret a name and give it the value you wish, and click "Add secret."
+    - For the purposes of this project, I created two secrets. One for the username and password of my personal Dockerhub account so that the GitHub action can use this information without hardcoding my personal information into anything someone else can see. My secrets were titled "DOCKER_USERNAME" and "DOCKER_PASSWORD."
+
+- Behavior of GitHub workflow
+    - GitHub workflow is a part of GitHub that allows you to define automated tasks that are to be executed when certain events happen in your repository. These events can include pushing to the repository, pull requests, merging branches, etc. Workflows can be defined and manipulated by creating a YAML file in the .github/workflows/ directory of your repository. 
+    - The variables in your workflow will be dependent on your project and can include: 
+        1. The repository/branch name 
+        2. Environment variables and values
+        3. The working directory and directories of files you wish to use
+        4. Commands to execute 
+
 
         
 
