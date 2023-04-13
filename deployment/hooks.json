@@ -1,0 +1,32 @@
+{
+    "id": "docker_restart",
+    "execute-command": "~/git/3120-cicd-wereshenron/deployment/docker_restart.sh",
+    "command-working-directory": "~/git/3120-cicd-wereshenron/deployment",
+    "response-message": "Running docker_restart.sh...",
+    "pass-arguments-to-command":
+    [
+        {
+            "source": "payload",
+            "name": "message"
+        }
+    ],
+    "trigger-rule":
+    {
+        "and":
+        [
+            {
+                "match":
+                {
+                    "type": "value",
+                    "value": "deploy",
+                    "parameter":
+                    {
+                        "source": "payload",
+                        "name": "action"
+                    }
+                }
+            }
+        ]
+    }
+}
+
